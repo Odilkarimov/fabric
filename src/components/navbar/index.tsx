@@ -3,7 +3,7 @@ import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import Menu, { MenuProps } from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -105,15 +105,23 @@ salom
             onClick={() => navigate("/")}
             width={133}
             src={Logo}
-            alt=""
+            alt="icon"
           />
         </div>
         <div>
           <ul className="flex items-center gap-[40px] max-md:hidden">
+            <NavLink to={"/"}>
             <li>Uy</li> 
+            </NavLink>
+            <NavLink to={"/shop"}>
             <li>To'plam</li>
+            </NavLink>
+            <NavLink to={"/about"}>
             <li>Biz haqimizda</li>
+            </NavLink>
+            <NavLink to={"/contact"}>
             <li>kontanktlar</li>
+            </NavLink>
           </ul>
         </div>
       </div>
