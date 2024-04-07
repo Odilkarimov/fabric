@@ -1,6 +1,7 @@
 import EmailI from "../../../assets/noun_Email.svg";
 import PhoneI from "../../../assets/noun_Phone.svg";
 import LocationI from "../../../assets/noun_Location.svg";
+import Footer from "../../footer";
 const Contact = () => {
   return (
     <div className="container-box">
@@ -9,19 +10,19 @@ const Contact = () => {
           <h2 className="text-[40px] font-bold">Aloqa</h2>
           <form action="" className="flex flex-col gap-[30px] mt-[50px]">
             <input
-              className="max-w-[550px] max-md:max-w-[800px] h-[45px] rounded-xl text-black px-[10px] py-[15px]"
+              className="max-w-[550px] max-md:max-w-[800px] h-[45px] rounded-3xl border-none bg-[#EFEFEF] px-[20px] py-[20px]"
               type="email"
               placeholder="sizning elektron manzilingiz"
               id="email"
             />
             <input
-              className="max-w-[550px] max-md:max-w-[800px] h-[45px] rounded-xl text-black px-[10px] py-[15px]"
+              className="max-w-[550px] max-md:max-w-[800px] h-[45px] rounded-3xl border-none bg-[#EFEFEF] px-[20px] py-[20px]"
               type="tel"
               placeholder="telefon raqamingiz"
               id="tel"
             />
             <textarea
-              className="max-w-[550px] max-md:max-w-[800px] h-[100px] rounded-xl resize-none border outline-none text-black px-[10px] py-[10px]"
+              className="max-w-[550px] max-md:max-w-[800px] h-[100px] rounded-3xl resize-none border outline-none border-none bg-[#EFEFEF] px-[20px] py-[10px]"
               name="tel"
               id="tel"
               placeholder="Sizning habaringiz..."
@@ -58,6 +59,9 @@ const Contact = () => {
               <h2><span className="font-bold">Manzil:</span>Buxoro, st. Alpomish 80.</h2>
             </li>
           </ul>
+        </div>
+        <div >
+          <Footer />
         </div>
     </div>
   );
