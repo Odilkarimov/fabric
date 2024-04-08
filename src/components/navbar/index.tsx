@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 type Anchor = "top" | "left" | "bottom" | "right";
 import MenuIcon from "../../assets/menu.png";
+import Clos from "../../assets/close.png";
 
 const StyledMenu = styled((props: MenuProps) => (
   <Menu
@@ -82,7 +83,23 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-salom
+      <div className="mt-[10px]">
+        <div className="flex items-start justify-end px-[10px] cursor-pointer"><img width={30} src={Clos} alt="" /></div>
+          <ul className="flex items-center gap-[20px] flex-col">
+            <NavLink to={"/"}>
+            <li className="font-bold">Uy</li> 
+            </NavLink>
+            <NavLink to={"/shop"}>
+            <li className="font-bold">To'plam</li>
+            </NavLink>
+            <NavLink to={"/about"}>
+            <li className="font-bold">Biz haqimizda</li>
+            </NavLink>
+            <NavLink to={"/contact"}>
+            <li className="font-bold">kontanktlar</li>
+            </NavLink>
+          </ul>
+        </div>
       </List>
     </Box>
   );
