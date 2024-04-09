@@ -3,6 +3,7 @@ import Icon1 from "../../../assets/noun_delivery.svg";
 import Icon2 from "../../../assets/noun_guarantee.svg";
 import Icon3 from "../../../assets/noun_airpods.svg";
 import Icon4 from "../../../assets/noun_Wallet.svg";
+import Data from "../../data/index.tsx";
 
 const Home = () => {
   return (
@@ -41,6 +42,16 @@ const Home = () => {
             </div>
           </li>
         </ul>
+      </div>
+      <div>
+        {
+          Data.map((item,index)=>(
+            <div key={index}>
+              <h1>{item.name}</h1>
+              <img src={item.img} alt="Error" />
+            </div>
+          ))
+        }
       </div>
     </div>
   );
