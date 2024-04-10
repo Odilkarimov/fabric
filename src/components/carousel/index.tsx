@@ -5,7 +5,7 @@ import { Carousel } from "flowbite-react";
 const CarouselUI = () => {
   return (
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel className="md:h-[500px]">
+      <Carousel>
         <img src={CarouselImg1} alt="..." />
         <img src={CarouselImg2} alt="..." />
         <img src={CarouselImg3} alt="..." />
