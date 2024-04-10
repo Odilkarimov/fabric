@@ -75,7 +75,7 @@ const Home = () => {
           <h2 className="font-bold text-[45px]">Qish kolleksiyasi</h2>
           <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
         </div>
-        <div className="mt-[30px] grid grid-cols-5 gap-[50px]">
+        <div className="mt-[30px] grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-2 gap-[50px]">
           {Data.slice(0, 10).map((item, index) => ( 
             <div key={index} className="flex flex-col gap-[20px]">
               <img className="rounded-3xl cursor-pointer" src={item.img} alt="Error" />
