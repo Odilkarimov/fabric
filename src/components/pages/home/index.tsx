@@ -48,29 +48,41 @@ const Home = () => {
           </li>
         </ul>
       </div>
-      <div className="bg-[#616884] max-w-full w-full rounded-3xl h-[400px] flex items-center justify-around mt-[50px]">
-        <div className="flex items-center flex-col">
-          <h2 className="text-[100px] font-black text-white">100%</h2>
-          <p className="text-white text-[30px]">material sifati</p>
+      <div className="bg-[#616884] max-w-full w-full rounded-3xl h-[400px] max-md:h-full flex items-center max-md:flex-col-reverse mt-[80px] px-[20px]">
+        <div className="flex items-center flex-col w-[30%]">
+          <h2 className="text-[100px] font-black text-white max-md:text-[50px]">
+            100%
+          </h2>
+          <p className="text-white text-[30px] max-md:text-[20px] w-[150px]">
+            material sifati
+          </p>
         </div>
-        <div>
-          <img className="w-[920px]" src={Spalne} alt="spalne" />
+        <div className="max-md:order-last">
+          <img className="max-md:w-[500px]" src={Spalne} alt="spalne" />
         </div>
-        <div>
-          <h2 className="text-[40px]">"Buxoro Tabiiy Mahsuloti"</h2>
-          <p className="text-[17px]">
+        <div className="flex flex-col items-start justify-center w-[30%] max-md:hidden">
+          <h2 className="text-[40px] text-white font-bold ">
+            "Buxoro Tabiiy Mahsuloti"
+          </h2>
+          <p className="text-[17px] max-w-[300px] text-white">
             ko'p yillar davomida butun dunyoda foydalanish uchun paxta
             matolarini ishlab chiqaradigan kompaniya bo'lib kelgan
           </p>
         </div>
       </div>
-      <div>
-        {Data.map((item, index) => (
-          <div key={index}>
-            <h1>{item.name}</h1>
-            <img src={item.img} alt="Error" />
-          </div>
-        ))}
+      <div className="mt-[100px]">
+        <div className="flex items-center justify-center flex-col">
+          <h2 className="font-bold text-[45px]">Qish kolleksiyasi</h2>
+          <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
+        </div>
+        <div className="mt-[30px] grid grid-cols-5 gap-[50px]">
+          {Data.slice(0, 10).map((item, index) => ( 
+            <div key={index} className="flex flex-col gap-[20px]">
+              <img className="rounded-3xl cursor-pointer" src={item.img} alt="Error" />
+              <h1 className="text-[17px]">{item.name}</h1>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
