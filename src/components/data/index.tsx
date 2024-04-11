@@ -143,52 +143,52 @@ const Collection = [
   },
   {
     id: 23,
-    name: "toqqa chiqish",
+    name: "Burberry",
     img: img23,
   },
   {
     id: 24,
-    name: "toqqa chiqish",
+    name: "Osiyo poparotnik",
     img: img24,
   },
   {
     id: 25,
-    name: "toqqa chiqish",
+    name: "akuamarin",
     img: img25,
   },
   {
     id: 26,
-    name: "toqqa chiqish",
+    name: "Baxorning hidlari",
     img: img26,
   },
   {
     id: 27,
-    name: "toqqa chiqish",
+    name: "Bobil",
     img: img27,
   },
   {
     id: 28,
-    name: "toqqa chiqish",
+    name: "Valerian",
     img: img28,
   },
   {
     id: 29,
-    name: "toqqa chiqish",
+    name: "Moviy suv (AB)",
     img: img29,
   },
   {
     id: 30,
-    name: "toqqa chiqish",
+    name: "Yovvoyi orkide",
     img: img30,
   },
   {
     id: 31,
-    name: "toqqa chiqish",
+    name: "Zumrad (AB)",
     img: img31,
   },
   {
     id: 32,
-    name: "toqqa chiqish",
+    name: "Imperator",
     img: img32,
   },
 ];

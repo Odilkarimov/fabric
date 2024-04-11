@@ -6,6 +6,9 @@ import Icon4 from "../../../assets/noun_Wallet.svg";
 import Spalne from "../../../assets/spalne1.png";
 import Spalne2 from "../../../assets/spalne2.png";
 import Spalne3 from "../../../assets/spalne3.png";
+import NewImg1 from "../../../assets/newImg1.png";
+import NewImg2 from "../../../assets/newimg2.png";
+import NewImg3 from "../../../assets/newImg3.png";
 import Data from "../../data/index.tsx";
 
 const Home = () => {
@@ -78,9 +81,16 @@ const Home = () => {
           <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
         </div>
         <div className="mt-[30px] grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-2 gap-[50px]">
-          {Data.slice(0, 10).map((item, index) => ( 
-            <div key={index} className="flex flex-col gap-[20px] hover:text-red-600 font-semibold">
-              <img className="rounded-3xl cursor-pointer" src={item.img} alt="Error" />
+          {Data.slice(0, 10).map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-[20px] hover:text-red-600 font-semibold"
+            >
+              <img
+                className="rounded-3xl cursor-pointer"
+                src={item.img}
+                alt="Error"
+              />
               <h1 className="text-[17px]">{item.name}</h1>
             </div>
           ))}
@@ -114,9 +124,16 @@ const Home = () => {
           <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
         </div>
         <div className="mt-[30px] grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-2 gap-[50px]">
-          {Data.slice(12, 22).map((item, index) => ( 
-            <div key={index} className="flex flex-col gap-[20px] hover:text-red-600 font-semibold">
-              <img className="rounded-3xl cursor-pointer" src={item.img} alt="Error" />
+          {Data.slice(12, 22).map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-[20px] hover:text-red-600 font-semibold"
+            >
+              <img
+                className="rounded-3xl cursor-pointer"
+                src={item.img}
+                alt="Error"
+              />
               <h1 className="text-[17px]">{item.name}</h1>
             </div>
           ))}
@@ -150,12 +167,47 @@ const Home = () => {
           <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
         </div>
         <div className="mt-[30px] grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-2 gap-[50px]">
-          {Data.slice(22, 32).map((item, index) => ( 
-            <div key={index} className="flex flex-col gap-[20px] hover:text-red-600 font-semibold">
-              <img className="rounded-3xl cursor-pointer" src={item.img} alt="Error" />
+          {Data.slice(22, 32).map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-[20px] hover:text-red-600 font-semibold"
+            >
+              <img
+                className="rounded-3xl cursor-pointer"
+                src={item.img}
+                alt="Error"
+              />
               <h1 className="text-[17px]">{item.name}</h1>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="mt-[50px]">
+        <div className="flex flex-col justify-center items-center">
+          <h2 className="font-bold text-[45px]">Yangiliklar</h2>
+          <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
+        </div>
+        <div className="mt-[50px]">
+          <ul className="flex items-center gap-[30px] justify-center max-lg:flex-wrap max-lg:gap-[80px]">
+            <li className="flex flex-col gap-[20px]">
+              <img className="rounded-3xl w-[491px] h-[275px]" src={NewImg1} alt="" />
+              <h3 className="text-[#5b5858] text-[18px]">10/05/2019 • admin tomonidan</h3>
+              <h2 className="font-bold text-[22px]">Qanday qilib mukammal gadjetlarni tanlash mumkin</h2>
+              <p>Go'zal vodiy atrofimni bug' bilan to'ldirganda va meridian quyoshi tepalikka urilganda ...</p>
+            </li>
+            <li className="flex flex-col gap-[20px]">
+              <img className="rounded-3xl w-[491px] h-[275px]" src={NewImg2} alt="" />
+              <h3 className="text-[#5b5858] text-[18px]">10/05/2019 • admin tomonidan</h3>
+              <h2 className="font-bold text-[22px]">Qanday qilib mukammal gadjetlarni tanlash mumkin</h2>
+              <p>Qachonki, go'zal vodiy atrofimni bug' bilan to'ldirganda va meridian quyoshi tepaga urilganda ...</p>
+            </li>
+            <li className="flex flex-col gap-[20px]">
+              <img className="rounded-3xl w-[491px] h-[275px]" src={NewImg3} alt="" />
+              <h3 className="text-[#5b5858] text-[18px]">10/05/2019 • admin tomonidan</h3>
+              <h2 className="font-bold text-[22px]">Qanday qilib mukammal gadjetlarni tanlash mumkin</h2>
+              <p>Lorem Ipsumning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati o'zgarishlardan aziyat chekdi ...</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
