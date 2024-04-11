@@ -20,6 +20,16 @@ import img19 from "../../assets/img19.jpg";
 import img20 from "../../assets/img20.jpg";
 import img21 from "../../assets/img21.jpg";
 import img22 from "../../assets/img22.jpg";
+import img23 from "../../assets/img23.jpg";
+import img24 from "../../assets/img24.jpg";
+import img25 from "../../assets/img25.jpg";
+import img26 from "../../assets/img26.jpg";
+import img27 from "../../assets/img27.jpg";
+import img28 from "../../assets/img28.jpg";
+import img29 from "../../assets/img29.jpg";
+import img30 from "../../assets/img30.jpg";
+import img31 from "../../assets/img31.jpg";
+import img32 from "../../assets/img32.jpg";
 const Collection = [
   {
     id: 1,
@@ -43,83 +53,143 @@ const Collection = [
   },
   {
     id: 5,
-    name: "Vasilisa",
+    name: "Kechki bog'",
     img: img5,
   },
   {
     id: 6,
-    name: "Vasilisa",
+    name: "Vizantiya",
     img: img6,
   },
   {
     id: 7,
-    name: "Vasilisa",
+    name: "Olcha guli",
     img: img7,
   },
   {
     id: 8,
-    name: "Vasilisa",
+    name: "Garmoniya",
     img: img8,
   },
   {
     id: 9,
-    name: "Vasilisa",
+    name: "Geometriya ko'k",
     img: img9,
   },
   {
     id: 10,
-    name: "Vasilisa",
+    name: "Disney",
     img: img10,
   },
   {
     id: 11,
-    name: "Vasilisa",
+    name: "Qiziqarli ayiqlar",
     img: img11,
   },
   {
     id: 12,
-    name: "Vasilisa",
+    name: "Ikat",
     img: img12,
-  },  {
+  },
+  {
     id: 13,
-    name: "Vasilisa",
+    name: "Kapalak",
     img: img13,
-  },  {
+  },
+  {
     id: 14,
-    name: "Vasilisa",
+    name: "Vintage uslubi",
     img: img14,
-  },  {
+  },
+  {
     id: 15,
-    name: "Vasilisa",
+    name: "Alp tog'lari o'simliklari",
     img: img15,
-  },  {
+  },
+  {
     id: 16,
-    name: "Vasilisa",
+    name: "Bumerang",
     img: img16,
-  },  {
+  },
+  {
     id: 17,
-    name: "Vasilisa",
+    name: "Ilhomlantiruvchi",
     img: img17,
-  },  {
+  },
+  {
     id: 18,
-    name: "Vasilisa",
+    name: "Versal A",
     img: img18,
-  },  {
+  },
+  {
     id: 19,
-    name: "Vasilisa",
+    name: "Versal B",
     img: img19,
-  },  {
+  },
+  {
     id: 20,
-    name: "Vasilisa",
+    name: "Sakura filiali",
     img: img20,
-  },  {
+  },
+  {
     id: 21,
-    name: "Vasilisa",
+    name: "Sharqiy Damashq",
     img: img21,
-  },  {
+  },
+  {
     id: 22,
-    name: "Vasilisa",
+    name: "toqqa chiqish",
     img: img22,
+  },
+  {
+    id: 23,
+    name: "toqqa chiqish",
+    img: img23,
+  },
+  {
+    id: 24,
+    name: "toqqa chiqish",
+    img: img24,
+  },
+  {
+    id: 25,
+    name: "toqqa chiqish",
+    img: img25,
+  },
+  {
+    id: 26,
+    name: "toqqa chiqish",
+    img: img26,
+  },
+  {
+    id: 27,
+    name: "toqqa chiqish",
+    img: img27,
+  },
+  {
+    id: 28,
+    name: "toqqa chiqish",
+    img: img28,
+  },
+  {
+    id: 29,
+    name: "toqqa chiqish",
+    img: img29,
+  },
+  {
+    id: 30,
+    name: "toqqa chiqish",
+    img: img30,
+  },
+  {
+    id: 31,
+    name: "toqqa chiqish",
+    img: img31,
+  },
+  {
+    id: 32,
+    name: "toqqa chiqish",
+    img: img32,
   },
 ];
 export default Collection;
