@@ -35,19 +35,18 @@ const Shop = () => {
         <div className="flex gap-[20px]">
           <input type="text" />
           <div>
-            <h2>Kollekssiya</h2>
-            <p>Отображение 1-16 из 76 Исходная сортировка</p>
+            <h2 className="text-[45px] font-bold">{selectedCollection}</h2>
           </div>
         </div>
         <button>isxodnaya sortirovka</button>
       </div>
       <div className="flex items-start justify-center gap-[50px]">
-        <div className="mt-[30px]">
-          <Dropdown label="Dropdown" inline>
-            <Dropdown.Item onClick={() => handleCollectionChange("Baxor Kolleksiyasi")}>Baxor Kolleksiyasi</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleCollectionChange("Qish Kolleksiyasi")}>Qish Kolleksiyasi</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleCollectionChange("Yozgi Kolleksiya")}>Yozgi Kolleksiya</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleCollectionChange("Kuz Kolleksiyasi")}>Kuz Kolleksiyasi</Dropdown.Item>
+        <div className="mt-[30px] text-[20px] font-bold">
+          <Dropdown label="To'plam" inline>
+            <Dropdown.Item className="text-[20px] text-black" onClick={() => handleCollectionChange("Baxor Kolleksiyasi")}>Baxor Kolleksiyasi</Dropdown.Item>
+            <Dropdown.Item className="text-[20px] text-black" onClick={() => handleCollectionChange("Qish Kolleksiyasi")}>Qish Kolleksiyasi</Dropdown.Item>
+            <Dropdown.Item className="text-[20px] text-black" onClick={() => handleCollectionChange("Yozgi Kolleksiya")}>Yozgi Kolleksiya</Dropdown.Item>
+            <Dropdown.Item className="text-[20px] text-black" onClick={() => handleCollectionChange("Kuz Kolleksiyasi")}>Kuz Kolleksiyasi</Dropdown.Item>
           </Dropdown>
         </div>
         <div>
