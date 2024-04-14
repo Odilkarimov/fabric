@@ -10,13 +10,6 @@ import NewImg1 from "../../../assets/newImg1.png";
 import NewImg2 from "../../../assets/newimg2.png";
 import NewImg3 from "../../../assets/newImg3.png";
 import Data from "../../data/index.tsx";
-import { useNavigate } from "react-router-dom";
-
-// interface Item {
-//   img?: string;
-//   name?: string;
-//   id?: number;
-// }
 
 const Home = () => {
   return (

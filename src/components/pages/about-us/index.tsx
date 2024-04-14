@@ -1,5 +1,4 @@
 import Group from "../../../assets/group-of.png";
-import Footer from "../../footer";
 const About = () => {
   return (
     <div className="container-box">
