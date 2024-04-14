@@ -10,7 +10,8 @@ interface Item {
 const ShopDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
-  const item = Data.find((item: Item) => item.id === parseInt(id));
+  const itemId = parseInt(id || "");
+  const item = Data.find((item: Item) => item.id === itemId);
   if (!item) {
     return <div>Rasmdagi mahsulot topilmadi</div>;
   }
