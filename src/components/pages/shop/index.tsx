@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Dropdown } from "flowbite-react";
 import Data from "../../data/index.tsx";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface Item {
-  img: string;
-  name: string;
-  id: number;
+  img?: string;
+  name?: string;
+  id?: number;
 }
 
 const Shop = () => {
+  const navigate = useNavigate();
   const [selectedCollection, setSelectedCollection] =
     useState<string>("Baxor Kolleksiyasi");
 
@@ -72,9 +73,9 @@ const Shop = () => {
         </div>
         <div>
           <div className="mt-[30px] grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-[50px]">
-            {filteredData.map((item: Item, index: number) => (
-              <Link to={`/shop:${item.id}`}>
+            {filteredData.map((item: Item, index: number ) => (
                 <div
+                onClick={() => navigate(`/shop-details/${item?.id}`)}
                   key={index}
                   className="flex flex-col gap-[20px] hover:text-red-600 font-semibold"
                 >
@@ -85,7 +86,6 @@ const Shop = () => {
                   />
                   <h1 className="text-[17px]">{item.name}</h1>
                 </div>
-              </Link>
             ))}
           </div>
         </div>
