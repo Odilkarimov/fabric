@@ -1,6 +1,7 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex items-center justify-between mt-[70px] max-lg:flex-wrap max-md:gap-8">
       <div className="flex gap-[20px]">
@@ -15,18 +16,38 @@ const Footer = () => {
         <div className="flex flex-col gap-[20px]">
           <h2 className="font-bold text-[20px]">menyu</h2>
           <ul className="flex items-start gap-[10px] flex-col">
-            <NavLink to={"/"}>
-              <li>Uy</li>
-            </NavLink>
-            <NavLink to={"/shop"}>
-              <li>To'plam</li>
-            </NavLink>
-            <NavLink to={"/about"}>
-              <li>Biz haqimizda</li>
-            </NavLink>
-            <NavLink to={"/contact"}>
-              <li>kontanktlar</li>
-            </NavLink>
+            <li className="cursor-pointer"
+              onClick={() => {
+                navigate("/");
+                window.scrollTo({ top: 0 });
+              }}
+            >
+              Uy
+            </li>
+            <li className="cursor-pointer"
+              onClick={() => {
+                navigate("/shop");
+                window.scrollTo({ top: 0 });
+              }}
+            >
+              To'plam
+            </li>
+            <li className="cursor-pointer"
+              onClick={() => {
+                navigate("/about");
+                window.scrollTo({ top: 0 });
+              }}
+            >
+              Biz haqimizda
+            </li>
+            <li className="cursor-pointer"
+              onClick={() => {
+                navigate("/contact");
+                window.scrollTo({ top: 0 });
+              }}
+            >
+              kontanktlar
+            </li>
           </ul>
         </div>
       </div>
@@ -40,7 +61,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col items-start gap-[10px]">
-        <h2 className="text-[20px]">Elektron pochtamizga <br /> obuna bo'ling</h2>
+        <h2 className="text-[20px]">
+          Elektron pochtamizga <br /> obuna bo'ling
+        </h2>
         <div className="flex flex-col gap-[20px] items-start">
           <input
             className="max-w-[400px] h-[45px] rounded-3xl border-none bg-[#EFEFEF] px-[40px] py-[25px]"
@@ -52,7 +75,7 @@ const Footer = () => {
             <h2 className="text-[18px] font-semibold text-white">Yuborish</h2>
           </button>
           <h2>Kamida bitta ro'yxatni tanlang</h2>
-        </div >
+        </div>
       </div>
     </div>
   );
