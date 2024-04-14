@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="text-[50px] font-bold max-md:text-[25px]">
             Buxoro tabiiy mahsuloti
           </h2>
-          <div className="flex flex-col gap-[50px] max-md:gap-[20px]">
+          <div className="flex flex-col gap-[30px] max-md:gap-[20px]">
             <h2 className="text-[18px] max-md:text-[14px]">
               Buxoro matolari, Eko sumkalar, Buxoro matolari, Eko
               sumkalarFabrikamız ko'p yillar davomida butun dunyoda foydalanish
@@ -20,7 +20,7 @@ const About = () => {
               kompaniya 17 yildan beri mijozlarga xizmat ko'rsatmoqda.
             </h2>
             <span className="max-lg:hidden max-md:block">
-              <div className="flex flex-col gap-[50px] max-md:gap-[20px]">
+              <div className="flex flex-col gap-[30px] max-md:gap-[20px]">
 
               <h2 className="text-[18px] max-md:text-[14px]">
                 Buxoro matolari, Eko sumkalar, Buxoro matolari, Eko
@@ -83,7 +83,6 @@ const About = () => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

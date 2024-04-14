@@ -4,7 +4,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <div className="flex items-center justify-between mt-[70px] max-lg:flex-wrap max-md:gap-8">
-      <div className="flex gap-[20px]">
+      <div className="flex gap-[80px]">
         <div>
           <img className="w-[320px]" src={Logo} alt="" />
           <h2 className="max-w-[280px] text-[#999999]">

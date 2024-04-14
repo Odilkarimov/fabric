@@ -1,7 +1,6 @@
 import EmailI from "../../../assets/noun_Email.svg";
 import PhoneI from "../../../assets/noun_Phone.svg";
 import LocationI from "../../../assets/noun_Location.svg";
-import Footer from "../../footer";
 const Contact = () => {
   return (
     <div className="container-box">
