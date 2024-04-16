@@ -77,8 +77,8 @@ const Home = () => {
       </div>
       <div className="mt-[100px]">
         <div className="flex items-center justify-center flex-col">
-          <h2 className="font-bold text-[45px]">Qish kolleksiyasi</h2>
-          <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
+          <h2 className="font-bold text-[45px]">{t("section.sectext12")}</h2>
+          <p className="text-[#AAAAAA] text-[18px]">{t("section.sectext13")}</p>
         </div>
         <div
           className="mt-[30px] grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-2 gap-[50px]"
@@ -104,7 +104,7 @@ const Home = () => {
             100%
           </h2>
           <p className="text-white text-[30px] max-md:text-[20px] w-[150px]">
-            material sifati
+          {t("section.sectext9")}
           </p>
         </div>
         <div className="max-md:order-last">
@@ -112,18 +112,17 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-start justify-center w-[30%] max-md:hidden">
           <h2 className="text-[40px] text-white font-bold ">
-            "Buxoro Tabiiy Mahsuloti"
+          {t("section.sectext10")}
           </h2>
           <p className="text-[17px] max-w-[300px] text-white">
-            ko'p yillar davomida butun dunyoda foydalanish uchun paxta
-            matolarini ishlab chiqaradigan kompaniya bo'lib kelgan
+          {t("section.sectext11")}
           </p>
         </div>
       </div>
       <div className="mt-[100px]">
         <div className="flex items-center justify-center flex-col">
-          <h2 className="font-bold text-[45px]">Kuz kolleksiya</h2>
-          <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
+          <h2 className="font-bold text-[45px]">{t("section.sectext14")}</h2>
+          <p className="text-[#AAAAAA] text-[18px]">{t("section.sectext13")}</p>
         </div>
         <div className="mt-[30px] grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-2 gap-[50px]">
           {Data.slice(12, 22).map((item, index) => (
@@ -147,7 +146,7 @@ const Home = () => {
             100%
           </h2>
           <p className="text-white text-[30px] max-md:text-[20px] w-[150px]">
-            material sifati
+          {t("section.sectext9")}
           </p>
         </div>
         <div className="max-md:order-last">
@@ -155,18 +154,17 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-start justify-center w-[30%] max-md:hidden">
           <h2 className="text-[40px] text-white font-bold ">
-            "Buxoro Tabiiy Mahsuloti"
+          {t("section.sectext10")}
           </h2>
           <p className="text-[17px] max-w-[300px] text-white">
-            ko'p yillar davomida butun dunyoda foydalanish uchun paxta
-            matolarini ishlab chiqaradigan kompaniya bo'lib kelgan
+          {t("section.sectext11")}
           </p>
         </div>
       </div>
       <div className="mt-[100px]">
         <div className="flex items-center justify-center flex-col">
-          <h2 className="font-bold text-[45px]">Kuz kolleksiya</h2>
-          <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
+          <h2 className="font-bold text-[45px]">{t("section.sectext15")}</h2>
+          <p className="text-[#AAAAAA] text-[18px]">{t("section.sectext13")}</p>
         </div>
         <div className="mt-[30px] grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-2 gap-[50px]">
           {Data.slice(22, 32).map((item, index) => (
@@ -186,8 +184,8 @@ const Home = () => {
       </div>
       <div className="mt-[50px]">
         <div className="flex flex-col justify-center items-center">
-          <h2 className="font-bold text-[45px]">Yangiliklar</h2>
-          <p className="text-[#AAAAAA] text-[18px]">Buxoro tabiiy mahsuloti</p>
+          <h2 className="font-bold text-[45px]">{t("section.sectext16")}</h2>
+          <p className="text-[#AAAAAA] text-[18px]">{t("section.sectext13")}</p>
         </div>
         <div className="mt-[50px]">
           <ul className="flex items-center gap-[30px] justify-center max-lg:flex-wrap max-lg:gap-[80px]">
@@ -198,14 +196,13 @@ const Home = () => {
                 alt=""
               />
               <h3 className="text-[#5b5858] text-[18px]">
-                10/05/2019 • admin tomonidan
+              {t("section.sectext17")}
               </h3>
               <h2 className="font-bold text-[22px]">
-                Qanday qilib mukammal gadjetlarni tanlash mumkin
+              {t("section.sectext18")}
               </h2>
               <p>
-                Go'zal vodiy atrofimni bug' bilan to'ldirganda va meridian
-                quyoshi tepalikka urilganda ...
+              {t("section.sectext19")}
               </p>
             </li>
             <li className="flex flex-col gap-[20px]">
@@ -215,14 +212,13 @@ const Home = () => {
                 alt=""
               />
               <h3 className="text-[#5b5858] text-[18px]">
-                10/05/2019 • admin tomonidan
+              {t("section.sectext17")}
               </h3>
               <h2 className="font-bold text-[22px]">
-                Qanday qilib mukammal gadjetlarni tanlash mumkin
+              {t("section.sectext18")}
               </h2>
               <p>
-                Qachonki, go'zal vodiy atrofimni bug' bilan to'ldirganda va
-                meridian quyoshi tepaga urilganda ...
+              {t("section.sectext20")}
               </p>
             </li>
             <li className="flex flex-col gap-[20px]">
@@ -232,14 +228,13 @@ const Home = () => {
                 alt=""
               />
               <h3 className="text-[#5b5858] text-[18px]">
-                10/05/2019 • admin tomonidan
+              {t("section.sectext17")}
               </h3>
               <h2 className="font-bold text-[22px]">
-                Qanday qilib mukammal gadjetlarni tanlash mumkin
+              {t("section.sectext18")}
               </h2>
               <p>
-                Lorem Ipsumning ko'plab o'zgarishlari mavjud, ammo ularning
-                aksariyati o'zgarishlardan aziyat chekdi ...
+              {t("section.sectext21")}
               </p>
             </li>
           </ul>
