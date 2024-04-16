@@ -22,11 +22,20 @@ const translationsUz = {
     sectext14: "Kuzgi kolleksiya",
     sectext15: "yozgi kolleksiya",
     sectext16: "Yangiliklar",
-    sectext17: "10/05/2019 • администратор",
-    sectext18: "Как выбрать идеальные гаджеты",
-    sectext19: "Когда мой внутренний оазис наполняется влагой и меридиановое солнце встает над вершиной ...",
-    sectext20: "Когда мой внутренний оазис наполняется влагой и меридиановое солнце встает над вершиной ...",
-    sectext21: "Много изменений Lorem Ipsum доступно, но большинство из них причиняют намного больше боли ...",
+    sectext17: "10/05/2019 • admin tomonidan",
+    sectext18: "Qanday qilib mukammal gadjetlarni tanlash mumkin",
+    sectext19: "Go'zal vodiy atrofimni bug' bilan to'ldirganda va meridian quyoshi tepalikka urilganda ...",
+    sectext20: "Qachonki, go'zal vodiy atrofimni bug' bilan to'ldirganda va meridian quyoshi tepaga urilganda ...",
+    sectext21: "Lorem Ipsumning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati o'zgarishlardan aziyat chekdi ...",
     },
+    footer: {
+        ftext1: "Bukhara Natural Product” ko'p yillardan buyon butun dunyoda foydalanish uchun paxta matolari ishlab chiqaradigan kompaniya hisoblanadi.",
+        ftext2: "Menu",
+        ftext3: "kontaktlar",
+        ftext4: "Buxoro, st. Alpomish 80. Bnpuz@bk.ru bnp_fabrik info@bnpfabric.com +998 93 383 75 85 +998 93 960 78 00",
+        ftext5: "Elektron pochtamizga obuna bo'ling",
+        ftext6: "sizning elektron manzilingiz",
+        ftext7: "Yuborish",
+    }
 };
 export default translationsUz;
