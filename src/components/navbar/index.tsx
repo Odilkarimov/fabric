@@ -11,6 +11,8 @@ import List from "@mui/material/List";
 type Anchor = "top" | "left" | "bottom" | "right";
 import MenuIcon from "../../assets/menu.png";
 import Clos from "../../assets/close.png";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 
 const StyledMenu = styled((props: MenuProps) => (
   <Menu
@@ -55,6 +57,11 @@ const StyledMenu = styled((props: MenuProps) => (
   },
 }));
 const Navbar = () => {
+  const changelang = (lang : any) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
+  };
+  const { t } = useTranslation();
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -83,20 +90,22 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-      <div className="mt-[10px]">
-        <div className="flex items-start justify-end px-[10px] cursor-pointer"><img width={30} src={Clos} alt="" /></div>
+        <div className="mt-[10px]">
+          <div className="flex items-start justify-end px-[10px] cursor-pointer">
+            <img width={30} src={Clos} alt="" />
+          </div>
           <ul className="flex items-center gap-[20px] flex-col">
             <NavLink to={"/"}>
-            <li className="font-bold">Uy</li> 
+              <li className="font-bold">{t("navbar.navtext1")}</li>
             </NavLink>
             <NavLink to={"/shop"}>
-            <li className="font-bold">To'plam</li>
+              <li className="font-bold">{t("navbar.navtext2")}</li>
             </NavLink>
             <NavLink to={"/about"}>
-            <li className="font-bold">Biz haqimizda</li>
+              <li className="font-bold">{t("navbar.navtext3")}</li>
             </NavLink>
             <NavLink to={"/contact"}>
-            <li className="font-bold">kontanktlar</li>
+              <li className="font-bold">{t("navbar.navtext4")}</li>
             </NavLink>
           </ul>
         </div>
@@ -128,21 +137,20 @@ const Navbar = () => {
         <div>
           <ul className="flex items-center gap-[40px] max-md:hidden">
             <NavLink to={"/"}>
-            <li>Uy</li> 
+              <li>{t("navbar.navtext1")}</li>
             </NavLink>
             <NavLink to={"/shop"}>
-            <li>To'plam</li>
+              <li>{t("navbar.navtext2")}</li>
             </NavLink>
             <NavLink to={"/about"}>
-            <li>Biz haqimizda</li>
+              <li>{t("navbar.navtext3")}</li>
             </NavLink>
             <NavLink to={"/contact"}>
-            <li>kontanktlar</li>
+              <li>{t("navbar.navtext4")}</li>
             </NavLink>
           </ul>
         </div>
       </div>
-
       <div className="hidden">
         {(["right"] as const).map((anchor) => (
           <React.Fragment key={anchor}>
@@ -162,7 +170,7 @@ const Navbar = () => {
           className="border border-black px-[5px] rounded-md h-[30px]"
           onClick={handleClick}
         >
-          o'zbekcha
+          {i18n.language === "uz" ? "O'zbekcha" : "Русский"}
         </button>
         <StyledMenu
           id="demo-customized-menu"
@@ -173,16 +181,21 @@ const Navbar = () => {
           open={open}
           onClose={handleClose}
         >
-          <MenuItem onClick={handleClose} disableRipple>
-            o'zbekcha
+          <MenuItem onClick={() => {changelang("uz"); handleClose();}} disableRipple>
+            O'zbekcha
           </MenuItem>
-          <MenuItem onClick={handleClose} disableRipple>
-            Русскый
+          <MenuItem onClick={() => {changelang("ru"); handleClose();}} disableRipple>
+            Русский
           </MenuItem>
         </StyledMenu>
-      <div>
-        <img src={MenuIcon} alt="" onClick={toggleDrawer("right", true)}  className="cursor-pointer w-[40px] h-[40px] hidden max-lg:block" />
-      </div>
+        <div>
+          <img
+            src={MenuIcon}
+            alt=""
+            onClick={toggleDrawer("right", true)}
+            className="cursor-pointer w-[40px] h-[40px] hidden max-lg:block"
+          />
+        </div>
       </div>
     </div>
   );

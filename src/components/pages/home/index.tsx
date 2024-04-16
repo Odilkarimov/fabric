@@ -10,8 +10,10 @@ import NewImg1 from "../../../assets/newImg1.png";
 import NewImg2 from "../../../assets/newimg2.png";
 import NewImg3 from "../../../assets/newImg3.png";
 import Data from "../../data/index.tsx";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <div className="container-box">
       <div>
@@ -22,32 +24,31 @@ const Home = () => {
           <li className="flex gap-7 max-lg:flex-col max-lg:items-center">
             <img className="max-w-[60px] wfull" src={Icon1} alt="icon" />
             <div className="flex flex-col w-[161px]">
-              <h2 className="font-bold">Yetkazib berish bepul</h2>
+              <h2 className="font-bold">{t("section.sectext1")}</h2>
               <p className="text-[#AAAAAA]">
-                Barcha buyurtmalar uchun bepul yetkazib berish
+              {t("section.sectext2")}
               </p>
             </div>
           </li>
           <li className="flex gap-6 max-lg:flex-col max-lg:items-center max-sm:mt-[-13px]">
             <img className="max-w-[50px] wfull" src={Icon2} alt="icon" />
             <div className="flex flex-col w-[161px]">
-              <h2 className="font-bold">Qaytish kafolati</h2>
-              <p className="text-[#AAAAAA]">30 kunlik pulni qaytarish</p>
+              <h2 className="font-bold">{t("section.sectext3")}</h2>
+              <p className="text-[#AAAAAA]">{t("section.sectext4")}</p>
             </div>
           </li>
           <li className="flex gap-7 max-lg:flex-col max-lg:items-center">
             <img className="max-w-[50px] wfull" src={Icon3} alt="icon" />
             <div className="flex flex-col w-[161px]">
-              <h2 className="font-bold">24/7 onlayn qo'llab-quvvatlash</h2>
-              <p className="text-[#AAAAAA]">24/7 texnik yordam</p>
+              <h2 className="font-bold">{t("section.sectext4")}</h2>
+              <p className="text-[#AAAAAA]">{t("section.sectext5")}</p>
             </div>
           </li>
           <li className="flex gap-7 max-lg:flex-col max-lg:items-center">
             <img className="max-w-[50px] wfull" src={Icon4} alt="icon" />
             <div className="flex flex-col w-[161px]">
-              <h2 className="font-bold">Xavfsiz to'lov</h2>
-              <p className="text-[#AAAAAA]">
-                Barcha to'lov usullari qabul qilinadi
+              <h2 className="font-bold">{t("section.sectext6")}</h2>
+              <p className="text-[#AAAAAA]">{t("section.sectext7")}
               </p>
             </div>
           </li>
@@ -59,7 +60,7 @@ const Home = () => {
             100%
           </h2>
           <p className="text-white text-[30px] max-md:text-[20px] w-[150px]">
-            material sifati
+          {t("section.sectext9")}
           </p>
         </div>
         <div className="max-md:order-last">
@@ -67,11 +68,10 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-start justify-center w-[30%] max-md:hidden">
           <h2 className="text-[40px] text-white font-bold ">
-            "Buxoro Tabiiy Mahsuloti"
+          {t("section.sectext10")}
           </h2>
           <p className="text-[17px] max-w-[300px] text-white">
-            ko'p yillar davomida butun dunyoda foydalanish uchun paxta
-            matolarini ishlab chiqaradigan kompaniya bo'lib kelgan
+          {t("section.sectext11")}
           </p>
         </div>
       </div>
